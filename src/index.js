@@ -7,6 +7,8 @@ export default {
       const username = form.get('user-name-1')
       const email = form.get('email-2')
 
+      await env.USER_DATA_STORE.put(username, email)
+
       return new Response(`Received: ${username}, ${email}`)
     }
 

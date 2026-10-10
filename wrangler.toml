@@ -9,3 +9,7 @@ binding = "ASSETS"
 [observability.logs]
 enabled = true
 invocation_logs = true
+
+[[kv_namespaces]]
+binding = "USER_DATA_STORE"
+id = "ab0c9c54254c4dc8a43cd0af8e385619"
